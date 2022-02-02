@@ -1,55 +1,118 @@
-div.top{
-  display: inline-block;
-  max-height: 104px;
-  position: fixed;
+
+* {
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-ul.nobullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-}
-
-div.lyssna{
-  min-height: 36px;
-}
+  
+  @font-face {
+    font-family: 'Futura';
+    src: url('https://www.oresundskraft.se/static/fonts/37B3B9_0_0.woff2');
+  }
 
 
-.topnav {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
 
-.topnav.left {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  float:left;
-}
+  body {
+    margin: 0;
+    font-family: 'Futura';
+  }
+  
+
+  .header {
+    padding: 0;
+    text-align: center;
+    background: #ffffff;
+    color: white;
+  }
+  
+
+  .topnav{
+    display: block;
+    position: relative;
+    background-color: #FBFBFB;
+    width: 1080px;
+    height: 83px;
+    margin:0;
+    font-size: 14px;
+  }
 
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  .navbar {  
+    background-color: #FBFBFB;
+    position: fixed;
+    z-index: 1;
+  }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+  
+ 
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-img.toplogo{
+  a.loggin{
+      font-weight: bold;
+      color: #025cab;
+  }
+
+
+  .toplogo{
   width: 85px;
   height: 32px;
-}
+  }
+
+
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  
+  /* Fööter */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  .line {
+    height: 2px;
+    width: 120px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background: #40bab1;
+  }
+
+  .boxs{
+    background-color: rgb(238, 243, 247);
+  }
+
+
+  
+  @media (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
