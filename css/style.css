@@ -16,6 +16,7 @@
   body {
     margin: 0;
     font-family: 'Futura';
+    box-sizing: border-box;
   }
   
 
@@ -24,48 +25,141 @@
     text-align: center;
     background: #ffffff;
     color: white;
-  }
-  
-
-  .topnav{
-    display: block;
     position: relative;
-    background-color: #FBFBFB;
-    width: 1080px;
-    height: 83px;
-    margin:0 auto;
-    font-size: 14px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+    height: 470px;
+    overflow: hidden;
   }
-
-
-  .navbar {  
-    background-color: #FBFBFB;
-    position: fixed;
-    z-index: 1;
-  }
-
   
-  .navbar a {
-    color: rgb(0, 0, 0);
-    padding: 14px 20px;
+  #menu {
+    background: #FBFBFB;
+    color: black;
+    height: 35px;
+    border-bottom: 1px solid #eeeded
+  }
+
+  #menu ul,
+  #menu li {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none
+  }
+
+  #menu ul {
+    height: 35px
+  }
+
+  #menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    font: bold 12px Arial;
+    text-transform: uppercase
+  }
+
+  #menu li:first-child {
+    border-left: none
+  }
+
+  #menu a {
+    display: block;
+    line-height: 35px;
+    padding: 0 14px;
     text-decoration: none;
-    text-align: center;
+    color: white;
   }
 
-  
- 
-  .navbar a:hover {
-    background-color: #ddd;
+
+
+  #menu input {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer
+  }
+
+  #menu label {
+    font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+  }
+
+  #menu label span {
+    font-size: 12px;
+    position: absolute;
+    left: 35px
+  }
+
+  #menu ul.menus {
+    height: auto;
+    width: 180px;
+    background: #369891;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border: 0;
+  }
+
+  #menu ul.menus li {
+    display: block;
+    width: 100%;
+    font: 12px Arial;
+    text-transform: none;
+  }
+
+  #menu li:hover ul.menus {
+    display: block
+  }
+
+
+  #menu a.prett {
+    padding: 0 27px 0 14px;
+    color: white;
+  }
+
+  #menu a.prett1 {
+    padding: 0 27px 0 14px;
     color: black;
   }
 
-  a.loggin{
-      font-weight: bold;
-      color: #025cab;
+  #menu a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 6px 5px;
+    border-style: solid;
+    border-color: #eee transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 9px
   }
 
+  #menu ul.menus a:hover {
+    background: #40bab1;
+  }
+
+  #menu ul.menus .submenu {
+    display: none;
+    position: absolute;
+    left: 180px;
+    background: #84c5c0;
+    top: 0;
+    width: 180px;
+  }
+
+  #menu ul.menus .submenu li {
+    background: #84c5c0;
+  }
+
+  #menu ul.menus .has-submenu:hover .submenu {
+    display: block;
+    background: #84c5c0;
+  }
 
   .toplogo{
   width: 85px;
@@ -76,6 +170,11 @@
   .row {  
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(238, 243, 247);
+    flex: 70%;
+    padding: 15px;
+    width: 100%;
+    clear: both;
   }
   
 
@@ -88,10 +187,54 @@
   .main {
     flex: 70%;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 880px;
   }
   
+  /* .img1, .img2, .img3{
+    word-break: break-all;
+    float: left;
+    width: 33.33%;
+    padding: 5px
+  } */
+
+  .imgbox1, .imgbox2, .imgbox3{
+    word-break: break-all;
+    float: left;
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  /* .imgfloat-r{
+    float: right;
+  } */
+
+
+
+  .video1{
+    position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+width: 100%;
+height: auto;
+  }
   
+
+  .box-m{
+    float:right;
+    height:580px;
+    Width: 50%;
+  }
+
+  .box-l{
+    float:left;
+  }
 
   .footer {
     padding: 0 20px;
@@ -121,7 +264,7 @@
     background-color: rgb(238, 243, 247);
     flex: 70%;
     padding: 20px;
-    word-break: break-all;
+    width: 100%;
   }
 
   .boxf-r{

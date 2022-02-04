@@ -8,162 +8,353 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chatt.css">
+    <link rel="stylesheet" href="css/boxmp4.css">
 
 </head>
 
 <body>
 
-    <div style="visibility: visible; background-color: rgb(64, 186, 177); width: 60px; height: 60px;"
-    class="ebbot" title="Öppna chattruta" aria-label="Öppna chattruta" tabindex="0">
-    <img style="width: 40px; height: 40px;" src="img/chat.png" alt="chat-bubble-icon"
-        width="40" height="40"></div>
+    <div style="visibility: visible; background-color: rgb(64, 186, 177); width: 60px; height: 60px;" class="ebbot"
+        title="Öppna chattruta" aria-label="Öppna chattruta" tabindex="0">
+        <img style="width: 40px; height: 40px;" src="img/chat.png" alt="chat-bubble-icon" width="40" height="40"></div>
 
 
 
     <!--  -->
-    <div class="topnav">
-        <div class="navbar">
-            <a href="#">START</a>
-            <a href="#">VILLA</a>
-            <a href="#">LÄGENHET</a>
-            <a href="#">
-                <img src="img/logo-oresundskraft.png" class="toplogo">
-            </a>
-            <a href="#home">FÖRETAG</a>
-            <a href="#news">OM OSS</a>
-            <a href="#contact" class="loggin">LOGGA IN</a>
-        </div>
+    <div class="top">
+        <nav>
+            <ul id='menu'>
+                <li><a class='prett1' href='#' title='Menu'>START</a>
+                    <ul class='menus'>
+                        <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>Kundservice</a>
+                            <ul class='submenu'>
+                                <li><a href="#" title="Sub Menu">Höga Elpriser</a></li>
+                                <li><a href="#" title="Sub Menu">Regeringens Elprisstöd</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#' title='Dropdown 2'>Avrbottsinformation</a></li>
+                        <li><a href='#' title='Dropdown 3'>Blogg</a></li>
+                        <li><a href='#' title='Dropdown 3'>Samlade Avtalsvilkor</a></li>
+                        <li><a href='#' title='Dropdown 3'>För Installatörer</a></li>
+                        <li><a href='#' title='Dropdown 3'>Gräv Instruktioner</a></li>
+                    </ul>
+                </li>
+                <ul id='menu'>
+                    <li><a class='prett1' href='#' title='Menu'>VILLA</a>
+                        <ul class='menus'>
+                            <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>EL</a>
+                                <ul class='submenu'>
+                                    <li><a href="#" title="Sub Menu">Höga Elpriser</a></li>
+                                    <li><a href="#" title="Sub Menu">Regeringens Elprisstöd</a></li>
+                                    <li><a href="#" title="Sub Menu">Framtidsval</a></li>
+                                </ul>
+                            </li>
+                            <li><a href='#' title='Dropdown 2'>Solceller</a></li>
+                            <li><a href='#' title='Dropdown 3'>Fjärrvärme</a></li>
+                            <li><a href='#' title='Dropdown 3'>Elbilsladdning</a></li>
+                            <li><a href='#' title='Dropdown 3'>Elnät</a></li>
+                            <li><a href='#' title='Dropdown 3'>Gas</a></li>
+                            <li><a href='#' title='Dropdown 3'>Fiber</a></li>
+                            <li><a href='#' title='Dropdown 3'>Energideklartion</a></li>
+                            <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>För
+                                    Installatörer</a>
+                                <ul class='submenu'>
+                                    <li><a href="#" title="Sub Menu">Elinstallatörer</a></li>
+                                    <li><a href="#" title="Sub Menu">Fjärrvärmeinstallatörer</a></li>
+                                    <li><a href="#" title="Sub Menu">Gasinstallatörer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <ul id='menu'>
+                        <li><a class='prett1' href='#' title='Menu'>LÄGENHET</a>
+                            <ul class='menus'>
+                                <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>EL</a>
+                                    <ul class='submenu'>
+                                        <li><a href="#" title="Sub Menu">Höga Elpriser</a></li>
+                                        <li><a href="#" title="Sub Menu">Regeringens Elprisstöd</a></li>
+                                        <li><a href="#" title="Sub Menu">Framtidsval</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#' title='Dropdown 2'>Elnät</a></li>
+                                <li><a href='#' title='Dropdown 3'>Stadsnät</a></li>
+                                <li><a href='#' title='Dropdown 3'>Elbilspool</a></li>
+                            </ul>
+                        </li>
+                        <!--  <ul id='menu'>
+                <li><a class='prett1' href='#' title='Menu'>
+                  <img src="img/logo-oresundskraft.png" class="toplogo"></a>
+                </li>
+              </ul> -->
+                        <ul id='menu'>
+                            <li><a class='prett1' href='#' title='Menu'>FÖRETAG</a>
+                                <ul class='menus'>
+                                    <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>EL</a>
+                                        <ul class='submenu'>
+                                            <li><a href="#" title="Sub Menu">Höga Elpriser</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-submenu'><a class='prett' href='Dropdown 1'
+                                            title='Dropdown 1'>SOLCELLER</a>
+                                        <ul class='submenu'>
+                                            <li><a href="#" title="Sub Menu">BRF</a></li>
+                                            <li><a href="#" title="Sub Menu">Företag</a></li>
+                                            <li><a href="#" title="Sub Menu">Lantbruk</a></li>
+                                        </ul>
+                                    <li class='has-submenu'><a class='prett' href='Dropdown 1'
+                                            title='Dropdown 1'>ELBILSLADDNING</a>
+                                        <ul class='submenu'>
+                                            <li><a href="#" title="Sub Menu">BRF och Samfällighet</a></li>
+                                            <li><a href="#" title="Sub Menu">Fastighetsägare och Företag</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='#' title='Dropdown 2'>Energilösningar</a></li>
+                                    <li><a href='#' title='Dropdown 3'>Elnät</a></li>
+                                    <li><a href='#' title='Dropdown 3'>Fjärrvärme</a></li>
+                                    <li><a href='#' title='Dropdown 3'>Fjärrkyla</a></li>
+                                    <li><a href='#' title='Dropdown 3'>Gas</a></li>
+                                    <li><a href='#' title='Dropdown 3'>Fiber</a></li>
+                                    <li class='has-submenu'><a class='prett' href='Dropdown 1' title='Dropdown 1'>För
+                                            installatörer</a>
+                                        <ul class='submenu'>
+                                            <li><a href="#" title="Sub Menu">Elinstallatörer</a></li>
+                                            <li><a href="#" title="Sub Menu">Fjärrvärmeinstallatörer</a></li>
+                                            <li><a href="#" title="Sub Menu">Gasinstallatörer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='#' title='Dropdown 3'>Kontakta våra säljare</a></li>
+                                </ul>
+                            </li>
+                            <ul id='menu'>
+                                <li><a class='prett1' href='#' title='Menu'>OM OSS</a>
+                                    <ul class='menus'>
+                                        <li><a href='#' title='Dropdown 2'>Vårt hållbarhetsarbete</a></li>
+                                        <li><a href='#' title='Dropdown 3'>#tillsammansför17</a></li>
+                                        <li><a href='#' title='Dropdown 3'>Vi ska göra skillnad</a></li>
+                                        <li><a href='#' title='Dropdown 3'>Det smarta samhället</a></li>
+                                        <li class='has-submenu'><a class='prett' href='Dropdown 1'
+                                                title='Dropdown 1'>Vår organisation</a>
+                                            <ul class='submenu'>
+                                                <li><a href="#" title="Sub Menu">Organisation</a></li>
+                                                <li><a href="#" title="Sub Menu">Styrelse</a></li>
+                                                <li><a href="#" title="Sub Menu">LedningsTeam Energi</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href='#' title='Dropdown 3'>Årliga rapporter</a></li>
+                                        <li><a href='#' title='Dropdown 3'>Produktion & distribution</a></li>
+                                        <li><a href='#' title='Dropdown 3'>Utbildning</a></li>
+                                        <li><a href='#' title='Dropdown 3'>Jobba hos oss</a></li>
+                                    </ul>
+                                </li>
+                                <ul id='menu'>
+                                    <li><a class='prett1' href='#' title='Menu'>LOGGA IN</a>
+                                        <ul class='menus'>
+                                            <li><a href='#' title='Dropdown 2'>Mina sidor Privat</a></li>
+                                            <li><a href='#' title='Dropdown 3'>Energipoolen Företag</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+        </nav>
     </div>
     <div class="header">
-        <video autoplay loop playsinline muted>
+        <video autoplay loop playsinline muted class="video1">
             <source src="media/regeringens-elstod.mp4">
         </video>
     </div>
+    <div class="boxmp4">
+        <div class="heading">
+            S&#229; p&#229;verkar regeringens elprisst&#246;d dig
+        </div>
+        <div class="text">
+
+
+            <p>Efter att m&aring;nga drabbats h&aring;rt ekonomiskt efter den senaste tidens h&ouml;ga elpriser har
+                regeringen nu f&ouml;reslagit att 6 miljarder kronor ska avs&auml;ttas i statskassan som st&ouml;d
+                f&ouml;r de som ber&ouml;rts mest. F&ouml;rslaget finns med i en extra &auml;ndringsbudget som ska vara
+                klar i b&ouml;rjan av februari. D&auml;refter kommer riksdagen att fatta beslut om st&ouml;det. En del
+                fr&aring;gor om hur elprisst&ouml;det ska fungera i praktien &auml;r &auml;n s&aring; l&auml;nge
+                obesvarade. Vi bevakar fr&aring;gan och uppdaterar v&aring;r information s&aring; fort vi vet mer.
+                H&auml;r kan du l&auml;sa vad vi vet just nu!</p>
+
+        </div>
+        <div class="action">
+            <div>
+                <div>
+                    <div class="button-block">
+                        <div class="cta-button cta-button--bottom-center p-3">
+                            <a href="/sa-paverkar-regeringens-elprisstod-dig/" style="text-decoration: none;"
+                                class="our-button cta-button--gas">L&#228;s mer h&#228;r</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
     <div class="main">
         <h2>Välkommen till oss på Öresundskraft!</h2>
         <div class="line"></div>
-        <p>I mer än 160 år har vi kämpat för att på alla sätt vi kan, bidra till ett bättre samhälle och en bättre värld. Allt vi gör handlar om att bekämpa klimatförändringarna och skapa grymma förutsättningar för en hållbar utveckling.
-            Vi vill göra det lätt för människor att göra bättre val enklare genom att använda återvunnen och förnybar energi på mycket smartare, mer effektiva och miljövänliga sätt. Vi har allt du behöver för att med riktigt gott samvete, hålla dig varm, kall, laddad och uppkopplad på alla möjliga, härliga sätt!
-            Vi kan mycket, men inte allt. Den förändring som under de kommande tio åren kommer krävas för att klara av klimatutmaningarna, kan vi faktiskt bara uppnå tillsammans med andra människor. Så, vi hoppas verkligen att du redan är- eller vill vara med på denna rafflande åktur!</p>
+        <p>I mer än 160 år har vi kämpat för att på alla sätt vi kan, bidra till ett bättre samhälle och en bättre
+            värld. Allt vi gör handlar om att bekämpa klimatförändringarna och skapa grymma förutsättningar för en
+            hållbar utveckling.
+            Vi vill göra det lätt för människor att göra bättre val enklare genom att använda återvunnen och förnybar
+            energi på mycket smartare, mer effektiva och miljövänliga sätt. Vi har allt du behöver för att med riktigt
+            gott samvete, hålla dig varm, kall, laddad och uppkopplad på alla möjliga, härliga sätt!
+            Vi kan mycket, men inte allt. Den förändring som under de kommande tio åren kommer krävas för att klara av
+            klimatutmaningarna, kan vi faktiskt bara uppnå tillsammans med andra människor. Så, vi hoppas verkligen att
+            du redan är- eller vill vara med på denna rafflande åktur!</p>
         <br>
         <h2>Just nu hos oss</h2>
         <div class="line"></div>
-        <p>För att du ska slippa leta har vi samlat information kring några av de mest aktuella ämnena som kan beröra dig här nedanför.</p>
-        <div class="boxs">
+        <p>För att du ska slippa leta har vi samlat information kring några av de mest aktuella ämnena som kan beröra
+            dig här nedanför.</p>
+        <div class="row">
             <div class="imgbox1">
-                <div class="img1">
+                
                     <img src="img/elnatsavgift.jpg">
                     <h2>Kraftigt höjda elnätsavgifter from 1 jan 2022</h2>
-                    <p>Elnätsavgiften höjs from 1 januari 2022 för både privatpersoner och företag. 
+                    <p>Elnätsavgiften höjs from 1 januari 2022 för både privatpersoner och företag.
                         Tyvärr blir ökningen högre än vanligt.</p>
                     <a href="https://www.oresundskraft.se/hojda-elnatsavgifter/">Frågor och svar</a>
-                </div>
+                
             </div>
             <div class="imgbox2">
-                <div class="img2">
+                
                     <img src="img/05012017-dsc_4762.jpg">
                     <h2>Oförändrade fjärrvärmepriser för privatkunder 2022</h2>
-                    <p>Fjärrvärme är ett tryggt, prisvärt och klimatbriljant sätt att värma upp sitt hus på. 
-                        I en tid av ovanligt höga elpriser sparar fjärrvärmen dig dessutom en hel del pengar och det tycker vi är riktigt bra!</p>
+                    <p>Fjärrvärme är ett tryggt, prisvärt och klimatbriljant sätt att värma upp sitt hus på.
+                        I en tid av ovanligt höga elpriser sparar fjärrvärmen dig dessutom en hel del pengar och det
+                        tycker vi är riktigt bra!</p>
                     <a href="">Här kan du ta del av vårt pressmeddelande</a>
-                </div>
+                
             </div>
             <div class="imgbox3">
-                <div class="img3">
+                
                     <img src="img/pexels-laura-penwell-3608056.jpg">
                     <h2>Höga elhandelspriser - Läge och prognos</h2>
 
-                    <p>Många drabbas just nu hårt av de höga elpriserna och vi förstår att många känner sig oroliga över utvecklingen. 
-                    Vi vill hjälpa till på alla sätt vi kan och därför har vi på de här sidorna samlat relevant information kring elprisläget. 
-                    Sidorna uppateras löpande i takt med utveckling och ny information.</p>
+                    <p>Många drabbas just nu hårt av de höga elpriserna och vi förstår att många känner sig oroliga över
+                        utvecklingen.
+                        Vi vill hjälpa till på alla sätt vi kan och därför har vi på de här sidorna samlat relevant
+                        information kring elprisläget.
+                        Sidorna uppateras löpande i takt med utveckling och ny information.</p>
                     <a href="">Viktig information kring höga elpriser</a>
-                </div>
+                
             </div>
         </div>
-    </div>
-    </div>
-    <div class="boxs">
-        <div class="mp4box">
-            <video autoplay loop playsinline muted>
-                <source src="media/fjarrvarme-webben.mp4">
-            </video>
-            <h2>Fjärrvärme – bli klimatbrilljant med tillvaratagna resurser</h2>
 
-            <p>Visste du att fjärrvärme främst består av återvunnen och förnybar energi som annars bara skulle gått till spillo? 
-            Dessutom produceras el och värme samtidigt. Det är riktigt smart tycker vi!</p>
-            <a href="">Till våra fjärrvärmesidor för villaägare</a>
-        </div>
-    </div>
 
-    <h2>Du är viktig för oss!</h2>
-    <div class="line"></div>
-    <p>Vi vill göra det enkelt för dig att ta bättre hand om jorden tillsammans med oss. 
-    Därför har vi utvecklat massor av smarta tjänster och verktyg som är speciellt anpassade och utvecklade för dig. 
-    Om du inte hittar det du söker eller om du behöver mer hjälp är du alltid välkommen att kontakta oss!</p>
-    <div class="boxs">
-        <div>
-        <h2>Mina sidor</h2>
-        <p>Här kan du kolla din elförbrukning, fakturauppgifter och utföra andra viktiga ärenden.</p>
-        <a href="">Logga in</a>
-    </div>
-    <div>
-        <img src="img/ladda-ner-oresundskraft-appen.jpg">
-    </div>
-    <div>
-        <img src="img/valkommenkundservice-4.jpg">
-    </div>
-    <h2>Välkommen till kundservice</h2>
-    <p>Kundservice
-    Har du frågor om din faktura? Ska du flytta eller behöver du hjälp med något annat? Vi finns här för dig!</p>
-    <a href="">Kontakta oss</a>
-    </div>
-    <div></div>
-    <h2>Grejer vi är lite extra stolta över</h2>
-    <p>Vi är otroligt stolta över allt hårt arbete vi lägger ner för det vi kämpar för. Men det betyder ju inte att vi är nöjda, tvärtom! 
-    Visst tycker vi att det är riktigt kul att vi får så fina resultat kring våra insatser men det sporrar oss ju bara att vilja göra ännu mer.
-    Inget av det vi gör hade varit möjligt utan våra kunder, medarbetare, partners. Dig. <a href="">#tillsammansför17</a></p>
-    </div>
-    <div class="boxs">
-        <div>
-            <img src="img/jobba-hos-oss-oresundskraft.jpg">
-            <h2>17 h volontärarbete skapar ringar på vattnet</h2>
-            <p>Vi vill inte bara snacka en massa, utan göra konkreta saker för att bidra till ett bättre samhälle och en bättre värld. 
-                Som kund eller partner till Öresundskraft hjälper du oss!</p>
-            <a href="">Ta reda på mer om vårt samhällsengagemang</a>
+        <div class="boxs">
+            <div class="mp4box">
+                <video autoplay loop playsinline muted>
+                    <source src="media/fjarrvarme-webben.mp4" style="width:209px;height:209px;">
+                </video>
+                <h2>Fjärrvärme – bli klimatbrilljant med tillvaratagna resurser</h2>
+
+                <p>Visste du att fjärrvärme främst består av återvunnen och förnybar energi som annars bara skulle gått
+                    till
+                    spillo?
+                    Dessutom produceras el och värme samtidigt. Det är riktigt smart tycker vi!</p>
+                <a href="">Till våra fjärrvärmesidor för villaägare</a>
+            </div>
+        </div>
+
+        <h2>Du är viktig för oss!</h2>
+        <div class="line"></div>
+        <p>Vi vill göra det enkelt för dig att ta bättre hand om jorden tillsammans med oss.
+            Därför har vi utvecklat massor av smarta tjänster och verktyg som är speciellt anpassade och utvecklade för
+            dig.
+            Om du inte hittar det du söker eller om du behöver mer hjälp är du alltid välkommen att kontakta oss!</p>
+        <div class="boxs">
+            <div>
+                <p><div class="imgfloat-r">
+                    <img src="img/ladda-ner-oresundskraft-appen.jpg">
+                </div>
+                <h2>Mina sidor</h2>
+                Här kan du kolla din elförbrukning, fakturauppgifter och utföra andra viktiga ärenden.
+                <a href="">Logga in</a></p>
+            </div>
+            <div>
+                <p><div class="imgfloat-l">
+                    <img src="img/valkommenkundservice-4.jpg">
+                </div>
+                <h2>Välkommen till kundservice</h2>
+                Kundservice
+                    Har du frågor om din faktura? Ska du flytta eller behöver du hjälp med något annat? Vi finns här för
+                    dig!
+                <a href="">Kontakta oss</a></p>
+            </div>
         </div>
         <div>
-            <img src="img/vi-ska-gora-skillnad-oresundskraft.jpg">
-            <h2>Vi tar klimatfrågorna på allvar – så gör vi skillnad.</h2>
-            <p>I takt med att jorden blir varmare ökar vår drivkraft och våra insatser för att skapa hållbara lösningar för en låååång framtid.</p>
-            <a href="">Det här gör vi just nu</a>
+        <h2>Grejer vi är lite extra stolta över</h2>
+        <p>Vi är otroligt stolta över allt hårt arbete vi lägger ner för det vi kämpar för. Men det betyder ju inte att
+            vi
+            är nöjda, tvärtom!
+            Visst tycker vi att det är riktigt kul att vi får så fina resultat kring våra insatser men det sporrar oss
+            ju
+            bara att vilja göra ännu mer.
+            Inget av det vi gör hade varit möjligt utan våra kunder, medarbetare, partners. Dig. 
+            <a href="#">#tillsammansför17</a></p>
+        </div>    
+
+
+        <div class="boxs">
+            <div class="imgbox1">
+                    <img src="img/jobba-hos-oss-oresundskraft.jpg">
+                    <h2>17 h volontärarbete skapar ringar på vattnet</h2>
+                    <p>Vi vill inte bara snacka en massa, utan göra konkreta saker för att bidra till ett bättre
+                        samhälle och en
+                        bättre värld.
+                        Som kund eller partner till Öresundskraft hjälper du oss!</p>
+                    <a href="">Ta reda på mer om vårt samhällsengagemang</a>
+            </div>
+            <div class="imgbox2">
+                    <img src="img/vi-ska-gora-skillnad-oresundskraft.jpg">
+                    <h2>Vi tar klimatfrågorna på allvar – så gör vi skillnad.</h2>
+                    <p>I takt med att jorden blir varmare ökar vår drivkraft och våra insatser för att skapa hållbara
+                        lösningar
+                        för en låååång framtid.</p>
+                    <a href="">Det här gör vi just nu</a>
+            </div>
+            <div class="imgbox3">
+                    <img src="img/solhjalpen.jpg">
+                    <h2>Tjäna pengar till lag-/klasskassan med hjälp av solen!</h2>
+                    <p>Trött på att prångla salami, bingolotter och t-shirts? Vill ni, liksom oss på Öresundskraft,
+                        använda er
+                        tid till något som gör en viktig skillnad för andra?
+                        Bra! Tillsammans med Zoégas och EnergyAid driver vi ett härligt hållbart initiativ i Rwanda.</p>
+                    <a href="">Läs mer om hur du och ditt gäng kan hjälpa till</a>
+            </div>
         </div>
-        <div>
-            <img src="img/solhjalpen.jpg">
-            <h2>Tjäna pengar till lag-/klasskassan med hjälp av solen!</h2>
-                <p>Trött på att prångla salami, bingolotter och t-shirts? Vill ni, liksom oss på Öresundskraft, använda er tid till något som gör en viktig skillnad för andra? 
-                Bra! Tillsammans med Zoégas och EnergyAid driver vi ett härligt hållbart initiativ i Rwanda.</p>
-                <a href="">Läs mer om hur du och ditt gäng kan hjälpa till</a>
-        </div>
-    </div>
-    <div class="boxs">
-        <div>
-            <img src="img/hallbarhetsmal-oresundskraft.jpg">
-            <h2>Tillsammans för 17</h2>
-                <p>På FN:s toppmöte 2015 antog världens länder 17 globala mål för hållbar utveckling och en rättvis framtid. 
-                    Det tycker vi är otroligt bra och för oss är det helt självklart att hjälpa till på alla sätt vi kan!</p>
+        <br>
+            <div class="boxs">
+                <div>
+                    <img src="img/hallbarhetsmal-oresundskraft.jpg">
+                    <h2>Tillsammans för 17</h2>
+                    <p>På FN:s toppmöte 2015 antog världens länder 17 globala mål för hållbar utveckling och en rättvis
+                        framtid.
+                        Det tycker vi är otroligt bra och för oss är det helt självklart att hjälpa till på alla sätt vi
+                        kan!
+                    </p>
                     <a href="">Läs mer om vårt arbete #tillsammansför17</a>
-        </div>
+                </div>
+            </div>
+        
     </div>
-
-    </div>
-    
     <div class="footer">
         <div class="boxf-r"></div>
         <div class="boxf-m">
             <img src="img/Ok_white_logo2.png" class="footlogo">
             <strong>Hallå där, varmt välkommen till oss!</strong>
-            I mer än 160 år har vi på Öresundskraft kämpat för att på alla sätt vi kan, bidra till ett bättre samhälle och en bättre värld. 
-            Allt vi gör handlar om att bekämpa klimatförändringarna och skapa grymma förutsättningar för en hållbar framtid.
+            I mer än 160 år har vi på Öresundskraft kämpat för att på alla sätt vi kan, bidra till ett bättre samhälle
+            och en bättre värld.
+            Allt vi gör handlar om att bekämpa klimatförändringarna och skapa grymma förutsättningar för en hållbar
+            framtid.
             Läs mer om oss här
             Om cookies
             Personuppgiftsbehandling
@@ -179,9 +370,22 @@
                 <img src="img/twitter.svg">
                 <img src="img/youtube.svg">
             </div>
+            <div>
+                <p>
+                    Villa
+                    El
+                    Solceller
+                    Fjärrvärme
+                    Elbilsladdning
+                    Elnät
+                    Gas
+                    Fiber
+                    Energideklaration
+                </p>
+            </div>
             <div class="line-foot"></div>
         </div>
-        </div>
+    </div>
 </body>
 
 </html>

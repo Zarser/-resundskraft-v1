@@ -1,0 +1,25 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+.boxmp4 {
+    background-color: rgba(0, 0, 0, 0.58);
+    color: rgb(255, 255, 255);
+  }
+  .hero-block__textbox.text-box-bottom {
+    bottom: 0;
+  }
+  .hero-block__textbox.text-box-left {
+    left: 0;
+  }
+  .hero-block__textbox {
+    padding: 25px 20px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: #fff;
+    margin: 15px;
+    max-width: 50%;
+    color: #000;
+  }
